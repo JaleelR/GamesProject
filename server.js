@@ -1,6 +1,9 @@
-const app = require("./backend-app"); 
-const { PORT } = require("./config"); 
+/* Allows serverside of app server to start running via 
+http://localhost:3001
+*/
+
+const { app, PORT } = require("./backend-app"); 
 
 app.listen(PORT, '0.0.0.0', function () {
-    console.log(`Started on port ${PORT}`)
+    console.log(`Successfully started server`, PORT)
 });
